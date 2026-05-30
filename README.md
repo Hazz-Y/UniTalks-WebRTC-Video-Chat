@@ -81,8 +81,8 @@ graph TD
     SP_B <-->|5. Exchange Candidates via WS| WS
 
     %% P2P WebRTC Connection
-    SP_A ====|6. P2P Direct WebRTC Stream (Video/Audio/Data)| SP_B
-    CHESS_A <==>|7. Synchronize Game State via P2P Data Channel| CHESS_B
+    SP_A == "6. P2P Direct WebRTC Stream (Video/Audio/Data)" === SP_B
+    CHESS_A <-->|"7. Synchronize Game State via P2P Data Channel"| CHESS_B
 
     style ClientA fill:#1e1b4b,stroke:#4F46E5,color:#e0e7ff
     style ClientB fill:#1e1b4b,stroke:#4F46E5,color:#e0e7ff
